@@ -1,0 +1,20 @@
+.formulario label {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-right: 10px;
+  }
+  
+  .formulario input,
+  .formulario select {
+    display: block;
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .formulario input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+  }
