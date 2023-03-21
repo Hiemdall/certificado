@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<h1>Certificado Laboral - Integratic</h1>
+	<h1>Certificado</h1>
 
 	<form action="" method="post">
         <img class="logo" src="logo-ejemplo.png" alt="Logo de ejemplo">
