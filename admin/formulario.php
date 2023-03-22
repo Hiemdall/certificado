@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="estilo7.css">
   <!--Libreria para utilizar  la función de la mascara en el input del sueldo -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
@@ -18,37 +18,49 @@
 <form method="post">
 <img src="logo.png" alt="Integratic" width="200" height="80">
 <h1>Formulario de Empleado</h1>
-  <label for="input">Cédula:</label>
-  <input type="text" id="input" name="input" required>
-  <label for="nombr1">Primer Nombre:</label>
-  <input type="text" id="nombre1" name="nombre1" required>
-  <label for="nombre2">Segundo Nombre:</label>
-  <input type="text" id="nombre2" name="nombre2">
-  <label for="apellido">Primer Apellido:</label>
-  <input type="text" id="apellido1" name="apellido1" required>
-  <label for="apellido2">Segundo Apellido:</label>
-  <input type="text" id="apellido2" name="apellido2">
-  <label for="fecha_ingreso">Fecha Ingreso:</label>
-  <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
-  <label for="cargo">Cargo:</label>
-  <select id="cargo" name="cargo">
+
+  <label for="input" class=titulo >Cédula:</label>
+  <input type="text" id="input" name="input" class=cuadro required>
+
+  <label for="nombr1" class=titulo1 >Primer Nombre:</label>
+  <input type="text" id="nombre1" name="nombre1" class=cuadro1 required>
+
+
+  <label for="nombre2" class=titulo2>Segundo Nombre:</label>
+  <input type="text" id="nombre2" name="nombre2" class=cuadro2>
+
+  <label for="apellido" class=titulo3 >Primer Apellido:</label>
+  <input type="text" id="apellido1" name="apellido1" class=cuadro3 required>
+
+  <label for="apellido" class=titulo4 >Segundo Apellido:</label>
+  <input type="text" id="apellido2" name="apellido2" class=cuadro4>
+
+  <label for="fecha_ingreso" class=titulo5 >Fecha Ingreso:</label>
+  <input type="date" id="fecha_ingreso" name="fecha_ingreso" class=cuadro5 required>
+
+  <label for="cargo" class=titulo6 >Cargo:</label>
+  <select id="cargo" name="cargo" class=cuadro6>
   <option value="">Seleccionar cargo</option>
+
   <?php
   // Conexión local
   include("combo_cargo.php");
   ?>
   </select>
 
+  <label for="sueldo" class=titulo7>Sueldo:</label>
+  <input type="text" id="sueldo" name="sueldo" class=cuadro7>
 
-  <label for="sueldo">Sueldo:</label>
-  <input type="text" id="sueldo" name="sueldo">
-  <label for="estatus">Estatus:</label>
-  <input type="text" id="estatus" name="estatus">
+  <label for="estatus"class=titulo9>Estatus:</label>
+  <input type="text" id="estatus" name="estatus"class=cuadro9>
+
+  <label for="id_cargo" class=titulo8>ID:</label>
+  <input type="text" id="id_cargo" name="id_cargo" class=cuadro8 >
 
   
-  <input type="submit" name="agregar" value="Agregar">
-  <input type="submit" name="editar" value="Editar">
-  <input type="submit" name="eliminar" value="Eliminar">
+  <input type="submit" name="agregar" value="Agregar" class=boton1>
+  <input type="submit" name="editar" value="Editar" class=boton2>
+  <input type="submit" name="eliminar" value="Eliminar" class=boton3>
 </form>
 
 <?php

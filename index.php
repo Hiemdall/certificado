@@ -23,7 +23,7 @@
 	}
 
 	if (isset($_POST['certificado'])) {
-		header('Location: usuario/formulario2.php');
+		header('Location: usuario/formulario.php');
 		exit();
 	}
 
