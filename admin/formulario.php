@@ -51,12 +51,8 @@
   <label for="sueldo" class=titulo7>Sueldo:</label>
   <input type="text" id="sueldo" name="sueldo" class=cuadro7>
 
-  <label for="estatus"class=titulo9>Estatus:</label>
-  <input type="text" id="estatus" name="estatus"class=cuadro9>
-
-  <label for="id_cargo" class=titulo8>ID:</label>
-  <input type="text" id="id_cargo" name="id_cargo" class=cuadro8 >
-
+  <label for="estatus"class=titulo8>Estatus:</label>
+  <input type="text" id="estatus" name="estatus"class=cuadro8>
   
   <input type="submit" name="agregar" value="Agregar" class=boton1>
   <input type="submit" name="editar" value="Editar" class=boton2>
