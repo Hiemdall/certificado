@@ -20,11 +20,12 @@
 <h1>Formulario de Empleado</h1>
 
   <label for="input" class=titulo >Cédula:</label>
-  <input type="text" id="input" name="input" class=cuadro required>
+  <input type="text" id="input" name="input" class=cuadro required onkeydown="if(event.keyCode==13) document.getElementById('nombre1').focus()">
+  
 
   <label for="nombr1" class=titulo1 >Primer Nombre:</label>
-  <input type="text" id="nombre1" name="nombre1" class=cuadro1 required>
-
+  <input type="text" id="nombre1" name="nombre1" class=cuadro1 required onkeydown="if(event.keyCode==13) document.getElementById('nombre2').focus()">
+  
 
   <label for="nombre2" class=titulo2>Segundo Nombre:</label>
   <input type="text" id="nombre2" name="nombre2" class=cuadro2>
@@ -82,6 +83,19 @@ if (isset($_POST['agregar'])) {
 
 <!--Script para buscar en tiempo real la cedula, llamando el archivo verify.php-->
 <script>
+
+// Al presionar enter
+$('input').keydown(function(event) {
+  if (event.keyCode == 13) {
+    event.preventDefault();
+    var next_input = $(this).nextAll('input').first();
+    if (next_input.length) {
+      next_input.focus();
+    }
+  }
+});
+
+
 //Mascar del input sueldo
 $(document).ready(function() {
 		    $('#sueldo').inputmask('currency', {
