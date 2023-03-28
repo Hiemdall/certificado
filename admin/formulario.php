@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="estilo7.css">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
   <!--Libreria para utilizar  la función de la mascara en el input del sueldo -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
@@ -16,7 +16,7 @@
 <body>
 
 <form method="post">
-<img src="logo.png" alt="Integratic" width="200" height="80">
+<img src="logo.png" alt="Integratic">
 <h1>Formulario de Empleado</h1>
 
   <label for="input" class=titulo >Cédula:</label>
@@ -42,6 +42,8 @@
   <select id="cargo" name="cargo" class=cuadro6>
   <option value="">Seleccionar cargo</option>
 
+
+
   <?php
   // Conexión local
   include("combo_cargo.php");
@@ -58,6 +60,8 @@
   <input type="submit" name="editar" value="Editar" class=boton2>
   <input type="submit" name="eliminar" value="Eliminar" class=boton3>
 </form>
+
+
 
 <?php
   //Acciones de los submit
@@ -142,6 +146,10 @@ document.getElementById("input").addEventListener("input", function() {
   xhr.send("input=" + input);
 });
 </script>
+
+<footer> 
+      <p>Desarrollado por Integratic © 2023</p>
+    </footer>
 
 </body>
 </html>
